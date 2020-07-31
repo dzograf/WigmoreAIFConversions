@@ -1,0 +1,33 @@
+{"nodes":
+[	{"nodeID":"L2","text":"Witness: Anon. witnesses that defendant did not have the knife","type":"L","force":"belief"},
+	{"nodeID":"LL2","text":"Defence: Witness: Anon. witnesses that defendant did not have the knife","type":"L","force":"belief"},
+	{"nodeID":"YALL2L2","text":"Asserting","type":"YA","force":"no force","stance":"neutral"},
+	{"nodeID":"I1","text":"Defendant had the knife","type":"I","force":"belief","stance":"affirmatory"},
+	{"nodeID":"L1","text":"Prosecution: Defendant had the knife","type":"L","force":"belief"},
+	{"nodeID":"YAL1I1","text":"Asserting","type":"YA","force":"no force","stance":"neutral"},
+	{"nodeID":"TALL2L1","text":"Default Transition","type":"TA","force":"no force","stance":"neutral"},
+	{"nodeID":"I'I1","text":"Negation of: Defendant had the knife","type":"I","force":"no force","stance":"null"},
+	{"nodeID":"YAL2I'I1","text":"Testifying","type":"YA","force":"no force","stance":"neutral"},
+	{"nodeID":"RAL2I'I1","text":"Witness Testimony","type":"RA","force":"no force","stance":"negatory"},
+	{"nodeID":"YATALL2L1RAL2I'I1","text":"Arguing","type":"YA","force":"no force","stance":"neutral"},
+	{"nodeID":"CAI'I1I1","text":"Default Conflict","type":"CA","force":"no force","stance":"negatory"}],
+"edges":
+[	{"edgeID":"e0","fromID":"LL2","toID":"YALL2L2"},
+	{"edgeID":"e1","fromID":"YALL2L2","toID":"L2"},
+	{"edgeID":"e2","fromID":"L1","toID":"YAL1I1"},
+	{"edgeID":"e3","fromID":"YAL1I1","toID":"I1"},
+	{"edgeID":"e4","fromID":"LL2","toID":"TALL2L1"},
+	{"edgeID":"e5","fromID":"TALL2L1","toID":"L1"},
+	{"edgeID":"e6","fromID":"L2","toID":"YAL2I'I1"},
+	{"edgeID":"e7","fromID":"YAL2I'I1","toID":"I'I1"},
+	{"edgeID":"e8","fromID":"L2","toID":"RAL2I'I1"},
+	{"edgeID":"e9","fromID":"RAL2I'I1","toID":"I'I1"},
+	{"edgeID":"e10","fromID":"TALL2L1","toID":"YATALL2L1RAL2I'I1"},
+	{"edgeID":"e11","fromID":"YATALL2L1RAL2I'I1","toID":"RAL2I'I1"},
+	{"edgeID":"e12","fromID":"I'I1","toID":"CAI'I1I1"},
+	{"edgeID":"e13","fromID":"CAI'I1I1","toID":"I1"}],
+"locutions":
+[	{"nodeID":"L2","personID":"Witness","start":null,"end":null,"source":null},
+	{"nodeID":"LL2","personID":"Defence","start":null,"end":null,"source":null},
+	{"nodeID":"L1","personID":"Prosecution","start":null,"end":null,"source":null}
+]}

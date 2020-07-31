@@ -1,0 +1,15 @@
+{
+"nodes":
+ [
+     
+     {"nodeID":1,"type":"Circumstantial", "text":"Defendant had the knife", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":2,"type":"Testimonial", "text":"Anon. witnesses that defendant had the knife", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":3,"type":"Corroborative", "text":"Witness stood close by was not excited, he was disinterested spectator", "side":"Prosecution", "force":"belief", "stance":"affirmatory"}
+ ],
+ 
+ "edges":
+ [
+     {"edgeID":"e1", "fromID":2,"toID":1, "type":"provisional", "force":"strong", "stance":"affirmatory"},
+     {"edgeID":"e2", "fromID":3,"toID":2, "type":"corroborative edge", "force":"strong", "stance":"affirmatory"}
+ ]
+ }

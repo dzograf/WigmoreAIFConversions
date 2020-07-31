@@ -1,0 +1,27 @@
+{
+"nodes":
+ [
+     {"nodeID":26,"type":"Circumstantial", "text":"U's opportunity in time and place was almost exclusive", "side":"Prosecution", "force":"doubt", "stance":"affirmatory"},
+     {"nodeID":27,"type":"Circumstantial", "text":"On Dec. 31 U wasn on premises", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":271,"type":"Testimonial", "text":"Anon. witnesses that on Dec. 31 U wasn on premises", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":28,"type":"Corroborative", "text":"U was the only man so seen", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":281,"type":"Testimonial", "text":"Anon. witnesses that U was the only man so seen", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":29,"type":"Explanatory", "text":"U's wife and a woman visitor were there", "side":"Defence", "force":"no_force", "stance":"affirmatory"},
+     {"nodeID":30,"type":"Testimonial", "text":"Anon. witnesses that U's wife and a woman visitor were there", "side":"Defence", "force":"belief", "stance":"affirmatory"}, 
+     {"nodeID":31,"type":"Explanatory", "text":"Passing tramp-villain might have been there", "side":"Defence", "force":"no_force", "stance":"affirmatory"},
+     {"nodeID":32,"type":"Explanatory", "text":"In time between Dec. 31 and April others had access to J, if alive still", "side":"Defence", "force":"no_force", "stance":"affirmatory"}
+
+ ],
+ 
+ "edges":
+ [
+     {"edgeID":"e0", "fromID":27,"toID":26, "type":"provisional", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e1", "fromID":271,"toID":27, "type":"provisional", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e2", "fromID":28,"toID":27, "type":"corroborative edge", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e3", "fromID":281,"toID":28, "type":"provisional", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e4", "fromID":27,"toID":29, "type":"explanatory edge", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e5", "fromID":30,"toID":29, "type":"provisional", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e6", "fromID":27,"toID":31, "type":"explanatory edge", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e7", "fromID":27,"toID":32, "type":"explanatory edge", "force":"no_force", "stance":"affirmatory"}
+ ]
+ }

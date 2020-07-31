@@ -1,0 +1,31 @@
+{
+"nodes":
+ [
+     {"nodeID":1,"type":"Circumstantial", "text":"Did U kill J.?", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":2,"type":"Circumstantial", "text":"Data of slayer on J.'s body were of a person habing free and intimate access to horse barn of K", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":3,"type":"Corroborative", "text":"No other person but U had at that time such access", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":4,"type":"Testimonial", "text":"Anon. witnesses that no other person but U had at that time such access", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":5,"type":"Circumstantial", "text":"Clothing in sack had marks of mud from barn cellar", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":6,"type":"Circumstantial", "text":"Sacks holding body and clothes came from horse barn", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":7,"type":"Circumstantial", "text":"Wound-marks were those of a horse-cutter from barn", "side":"Prosecution", "force":"belief", "stance":"affirmatory"}, 
+     {"nodeID":8,"type":"Explanatory", "text":"Mud not specifically identified", "side":"Defence", "force":"no_force", "stance":"affirmatory"},
+     {"nodeID":9,"type":"Testimonial", "text":"Anon. witnesses that clothing in sack had marks of mud from barn cellar", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":10,"type":"Testimonial", "text":"Anon. witnesses that sacks holding body and clothes came from horse barn", "side":"Prosecution", "force":"belief", "stance":"affirmatory"},
+     {"nodeID":11,"type":"Testimonial", "text":"Anon. witnesses that wound-marks were those of a horse-cutter from barn", "side":"Prosecution", "force":"belief", "stance":"affirmatory"}
+
+ ],
+ 
+ "edges":
+ [
+     {"edgeID":"e0", "fromID":2,"toID":1, "type":"provisional", "force":"strong", "stance":"affirmatory"},
+     {"edgeID":"e1", "fromID":3,"toID":2, "type":"corroborative edge", "force":"strong", "stance":"affirmatory"},
+     {"edgeID":"e2", "fromID":4,"toID":3, "type":"provisional", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e3", "fromID":5,"toID":2, "type":"provisional", "force":"strong", "stance":"negatory"},
+     {"edgeID":"e4", "fromID":6,"toID":2, "type":"provisional", "force":"strong", "stance":"affirmatory"},
+     {"edgeID":"e5", "fromID":7,"toID":2, "type":"provisional", "force":"no_force", "stance":"negatory"},
+     {"edgeID":"e6", "fromID":5,"toID":8, "type":"explanatory edge", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e7", "fromID":9,"toID":5, "type":"provisional", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e8", "fromID":10,"toID":6, "type":"provisional", "force":"no_force", "stance":"affirmatory"},
+     {"edgeID":"e9", "fromID":11,"toID":7, "type":"provisional", "force":"no_force", "stance":"affirmatory"}
+ ]
+ }

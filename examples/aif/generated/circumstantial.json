@@ -1,0 +1,25 @@
+{"nodes":
+[	{"nodeID":"I2","text":"Knife was picked up near where defendant was","type":"I","force":"belief","stance":"affirmatory"},
+	{"nodeID":"L2","text":"Prosecution: Knife was picked up near where defendant was","type":"L","force":"belief","stance":"affirmatory"},
+	{"nodeID":"YAL2I2","text":"Asserting","type":"YA","force":"no_force","stance":"neutral"},
+	{"nodeID":"I1","text":"Defendant had the knife","type":"I","force":"belief","stance":"affirmatory"},
+	{"nodeID":"L1","text":"Prosecution: Defendant had the knife","type":"L","force":"belief","stance":"affirmatory"},
+	{"nodeID":"YAL1I1","text":"Asserting","type":"YA","force":"no_force","stance":"neutral"},
+	{"nodeID":"TAL2L1","text":"Default Transition","type":"TA","force":"no_force","stance":"neutral"},
+	{"nodeID":"RAI2I1","text":"Default Inference","type":"RA","force":"no_force","stance":"affirmatory"},
+	{"nodeID":"YATAL2L1RAI2I1","text":"Arguing","type":"YA","force":"no_force","stance":"neutral"}],
+"edges":
+[	{"edgeID":"e0","fromID":"L2","toID":"YAL2I2"},
+	{"edgeID":"e1","fromID":"YAL2I2","toID":"I2"},
+	{"edgeID":"e2","fromID":"L1","toID":"YAL1I1"},
+	{"edgeID":"e3","fromID":"YAL1I1","toID":"I1"},
+	{"edgeID":"e4","fromID":"L2","toID":"TAL2L1"},
+	{"edgeID":"e5","fromID":"TAL2L1","toID":"L1"},
+	{"edgeID":"e6","fromID":"I2","toID":"RAI2I1"},
+	{"edgeID":"e7","fromID":"RAI2I1","toID":"I1"},
+	{"edgeID":"e8","fromID":"TAL2L1","toID":"YATAL2L1RAI2I1"},
+	{"edgeID":"e9","fromID":"YATAL2L1RAI2I1","toID":"RAI2I1"}],
+"locutions":
+[	{"nodeID":"L2","personID":"Prosecution","start":null,"end":null,"source":null},
+	{"nodeID":"L1","personID":"Prosecution","start":null,"end":null,"source":null}
+]}
